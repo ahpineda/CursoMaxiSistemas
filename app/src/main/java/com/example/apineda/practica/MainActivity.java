@@ -13,15 +13,9 @@ import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
-    EditText nombre = (EditText) findViewById(R.id.nombreET);
-    EditText apellido = (EditText) findViewById(R.id.apellidoET);
-    EditText telefono = (EditText) findViewById(R.id.telefonoET);
-    EditText mail = (EditText) findViewById(R.id.mailET);
-    EditText mail2 = (EditText) findViewById(R.id.mail2ET);
-    Button cleanbt= (Button) findViewById(R.id.cleanbt);
-    Button botonApretado = (Button) findViewById(R.id.toast);
-    Button lanzar = (Button) findViewById(R.id.lanzarID);
-    RadioGroup radioGrup = (RadioGroup) findViewById(R.id.radiogrup);
+    EditText nombre, apellido, telefono, mail, mail2;
+    Button cleanbt, botonApretado, lanzar;
+    RadioGroup radioGrup;
 
 
 
@@ -29,6 +23,15 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        nombre = (EditText) findViewById(R.id.nombreET);
+        apellido = (EditText) findViewById(R.id.apellidoET);
+        telefono = (EditText) findViewById(R.id.telefonoET);
+        mail = (EditText) findViewById(R.id.mailET);
+        mail2 = (EditText) findViewById(R.id.mail2ET);
+        cleanbt= (Button) findViewById(R.id.cleanbt);
+        botonApretado = (Button) findViewById(R.id.toast);
+        lanzar = (Button) findViewById(R.id.lanzarID);
+        radioGrup = (RadioGroup) findViewById(R.id.radiogrup);
     }
 
     public void botonApretado(View view) {
