@@ -101,7 +101,7 @@
                 android:layout_marginLeft="10dp"/>
 
             <EditText
-                android:numeric="integer"
+                android:inputType="phone"
                 android:layout_width="120dp"
                 android:layout_height="wrap_content"
                 android:layout_toRightOf="@+id/telefonoTV"

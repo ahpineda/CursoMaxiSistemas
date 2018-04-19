@@ -40,6 +40,10 @@ public class MainActivity extends AppCompatActivity {
 
     public void lanzar(View view) {
             Intent intent = new Intent(this, SenderActivity.class);
+            Bundle bundle = MainActivity.this.getIntent().getExtras();
+            intent.putExtra("nombre", nombre.getText().toString());
+            intent.putExtra("apellido", apellido.getText().toString());
+            intent.putExtra ("telefono", telefono.getText().toString());
             startActivity(intent);
 
     }
