@@ -89,61 +89,99 @@
         
         />
     </RadioGroup>
-    
-    <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:layout_below="@+id/radiogrup"
-        android:layout_marginTop="15dp"
 
-        >
-        <RelativeLayout
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent">
+
             <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:text="Telefono"
-                android:textSize="20dp"
-                android:layout_marginLeft="15dp"
                 android:id="@+id/telefonoTV"
-                />
-            <EditText
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_toRightOf="@id/telefonoTV"
+                android:layout_marginTop="15dp"
+                android:text="Telefono"
+                android:layout_alignBaseline="@+id/telefonoET"
+                android:layout_marginLeft="10dp"/>
+
+            <EditText
+                android:numeric="integer"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/telefonoTV"
+                android:layout_below="@id/radiogrup"
                 android:id="@+id/telefonoET"
 
                 />
-            <Button
+
+            <TextView
                 android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:text="lanzar"
-                android:layout_below="@id/telefonoTV"
-                android:onClick="lanzar"
-                android:id="@+id/lanzarBT"
+                android:layout_height="wrap_content"
+                android:text="Mail"
+                android:id="@+id/mailTV"
+                android:layout_toRightOf="@id/telefonoET"
+                android:layout_below="@+id/radiogrup"
+                android:layout_marginTop="15dp"/>
+
+            <EditText
+                android:layout_width="130dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/mailET"
+                android:layout_alignBaseline="@+id/mailTV"
+                android:layout_toRightOf="@+id/mailTV"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/mail2TV"
+                android:text="Mail2"
+                android:layout_alignLeft="@+id/mailTV"
+                android:layout_below="@+id/mailTV"
+                android:layout_marginTop="20dp"
                 />
-        </RelativeLayout>
+            <EditText
+                 android:layout_width="130dp"
+                 android:layout_height="wrap_content"
+                 android:id="@+id/mail2ET"
+                 android:layout_alignBaseline="@+id/mail2TV"
+                 android:layout_toRightOf="@+id/mailTV"/>
 
 
 
+
+
+
+
+
+
+        <Button
+            android:layout_marginTop="150dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="lanzar"
+            android:layout_below="@+id/telefonoTV"
+            android:onClick="lanzar"
+            android:id="@+id/lanzarID"
+            android:layout_marginLeft="60dp"
+
+            />
 
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="boton"
+            android:text="Toast"
             android:onClick="botonApretado"
-            />
-        <Button
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:text="lanzar"
-            android:layout_below="@id/telefonoTV"
-            />
+            android:layout_toRightOf="@+id/lanzarID"
+            android:layout_alignBottom="@+id/lanzarID"
+            android:id="@+id/toast"/>
 
-    </LinearLayout>
-    
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cancelar"
+        android:onClick="cleanBT"
+        android:layout_toRightOf="@+id/toast"
+        android:layout_alignBottom="@+id/toast"
+        android:id="@+id/cleanbt"/>
+
+
+
 
 
 
